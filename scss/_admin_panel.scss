@@ -1,0 +1,139 @@
+section.roomView {
+	&.hide {
+		display: none;
+	}
+	&.show {
+		display: block;
+	}
+	.update_room_section {
+		h2 {
+			color: $clr-accent;
+		}
+		ul {
+			li {
+				input,
+				textarea {
+					padding: 0.5rem;
+					&.alerts {
+						outline: 2px solid red;
+					}
+				}
+				.img-wrapper {
+					width: 250px;
+					img {
+						width: 100%;
+						display: block;
+						height: auto;
+					}
+				}
+			}
+		}
+	}
+}
+section.newRoomView {
+	input,
+	textarea,
+	select {
+		&.alerts {
+			outline: 2px solid red;
+		}
+	}
+	&.hide {
+		display: none;
+	}
+	&.show {
+		display: block;
+	}
+}
+.room_sidebar {
+	max-width: 280px;
+}
+
+.view-wrapper {
+	width: 80%;
+	margin: 0 auto;
+	max-width: 800px;
+	min-width: 450px;
+}
+
+h2#roomTitle {
+	color: $clr-accent !important;
+}
+h3.subtitle {
+	color: $clr-accent !important;
+}
+div.allImgs {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	.img-wrapper {
+		flex: 0 0 20%;
+		height: 150px;
+		position: relative;
+
+		img {
+			position: relative;
+			z-index: 10;
+			display: block;
+
+			height: 100% !important;
+			width: unset !important;
+			max-width: 100%;
+			margin: 0 auto;
+			cursor: pointer;
+			transition: 0.3s all ease-in-out;
+			&:hover {
+				opacity: 0.5;
+				& ~ .overlay {
+					background-color: black;
+				}
+			}
+		}
+
+		.overlay {
+			transition: 0.3s all ease-in-out;
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			left: 0;
+			bottom: 0;
+			line-height: 150px;
+			text-align: center;
+			color: red;
+			font-weight: 500;
+			font-size: 1.3rem;
+			z-index: 0;
+			background-color: rgba(0, 0, 0, 0);
+			transition: 0.3s all ease-in-out;
+		}
+	}
+}
+
+.additional_img_wrapper {
+	position: relative;
+	img {
+		position: relative;
+		z-index: 2;
+		transition: 0.2s all ease-in-out;
+		cursor: pointer;
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+	.overlay {
+		background-color: black;
+		color: red;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.5rem;
+		font-weight: 500;
+		z-index: 0;
+	}
+}

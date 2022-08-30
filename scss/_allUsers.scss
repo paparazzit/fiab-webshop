@@ -1,0 +1,38 @@
+section.allUsers {
+	.container {
+		h2 {
+			color: white;
+		}
+		table {
+			color: white !important;
+		}
+		td {
+			padding: 1em;
+		}
+		tbody {
+			tr {
+				cursor: pointer;
+				&:hover {
+					background-color: rgba(white, 0.5);
+					color: $black;
+				}
+			}
+		}
+	}
+}
+
+section.userTable {
+	.container {
+		.row {
+			justify-content: center;
+			.col-md-9 {
+				background-color: White;
+				padding: 2rem;
+				h2 {
+					color: $black;
+				}
+				border: 2px solid white;
+			}
+		}
+	}
+}

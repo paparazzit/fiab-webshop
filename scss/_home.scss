@@ -1,0 +1,72 @@
+section.hero {
+	padding-top: 107px;
+	background-image: linear-gradient(rgba(black, 0.6), rgba(black, 0.6)),
+		url("./assets/fox_bg_lg.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		hgroup {
+			color: white;
+			margin-bottom: 2rem;
+			text-transform: uppercase;
+		}
+	}
+}
+
+section.rooms {
+	padding: 100px 0;
+
+	.my-container {
+		display: flex;
+		align-items: stretch;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+
+		.room {
+			flex: 0 0 30%;
+			margin-bottom: 40px;
+			margin-right: 1.5%;
+
+			.room-img {
+				img {
+					display: block;
+					width: 100%;
+					height: auto;
+				}
+			}
+			.card-content {
+				background-color: $clr-light;
+
+				h3 {
+					text-transform: uppercase;
+					background-color: $clr-accent;
+					padding: 10px 0;
+					text-align: center;
+					color: $black;
+				}
+				.card-text {
+					padding: 20px 30px;
+					.desc {
+						color: $black;
+						width: 85%;
+						margin: 0 auto 1.5rem auto;
+						min-width: 250px;
+					}
+					.my-btn {
+						display: block;
+						width: 160px;
+						margin-left: auto;
+					}
+				}
+			}
+		}
+	}
+}

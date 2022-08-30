@@ -1,0 +1,32 @@
+section.parts {
+	padding: 100px 0;
+	background-color: $clr-light;
+	.container {
+		.row {
+			justify-content: space-between;
+			.item {
+				margin: 30px 0;
+				flex: 0 0 30%;
+				padding: 0;
+				background-color: $black;
+				min-width: 280px;
+				img {
+					height: 100%;
+					width: unset;
+					object-fit: cover;
+					object-position: center;
+				}
+			}
+		}
+	}
+	@media (max-width: 767px) {
+		.container {
+			.row {
+				justify-content: center;
+				.item {
+					flex: 0 0 70%;
+				}
+			}
+		}
+	}
+}

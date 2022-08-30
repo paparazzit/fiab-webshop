@@ -1,0 +1,30 @@
+footer {
+	padding: 50px 0;
+
+	.my-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.copy {
+			.logo-img {
+				display: block;
+
+				width: 180px;
+				margin: 0 auto 20px auto;
+				img {
+					width: 100%;
+					display: block;
+					height: auto;
+				}
+			}
+			.copy-right {
+				text-align: center;
+				p {
+					padding: 0 30px;
+					color: $clr-gray;
+					opacity: 0.6;
+				}
+			}
+		}
+	}
+}
